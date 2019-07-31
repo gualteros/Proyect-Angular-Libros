@@ -13,11 +13,10 @@ public authorList: Set<string>;
 
 public libros: any;
 
-
   constructor(public ClienteService: ClienteService) {
     this.authorList = new Set();
-
   }
+
   onPush() {
     const newLibro = this.enteredText.split('-');
     console.log(newLibro);

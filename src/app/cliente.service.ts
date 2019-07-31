@@ -33,6 +33,4 @@ export class ClienteService {
     return this.http.post<Libro>(this.configUrl.concat('/addLibro'), libro, this.httpOptions);
   }
  
-
-
 }

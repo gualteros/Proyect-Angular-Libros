@@ -10,6 +10,7 @@ import { Libro1 } from '../interfaces/Libro1';
 })
 export class TableComponent implements OnInit {
   @Input('parentData') public libros;
+
 //public libros: Array<Libro>;
 
 constructor(public ClienteService: ClienteService) {
@@ -24,6 +25,7 @@ constructor(public ClienteService: ClienteService) {
 
   ngOnInit() {
   }
+  
   filterBooks(author: string) {
     const librosAux = [];
     this.libros.forEach(libro => {
