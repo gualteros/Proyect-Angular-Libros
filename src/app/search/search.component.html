@@ -1,0 +1,18 @@
+
+<head>
+
+<title>Ejemplo de Creación de Libros</title>
+
+</head>
+
+<body>
+
+<input [(ngModel)]="enteredText" type="text" name="fname"><br>
+<button (click)="onPush()">Search</button>&nbsp;
+<select (change)="filterBooks($event.target.value)" >
+  <option *ngFor="let author of authorList; index as i;">{{author}}</option>     
+</select>
+  <app-table [parentData]="libros"></app-table>
+</body>
+
+

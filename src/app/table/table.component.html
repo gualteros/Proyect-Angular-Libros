@@ -1,0 +1,25 @@
+
+  <div id="container">
+<table class="egt" style="width:100%">
+
+    <tr>
+      <th></th>
+      <th>Autor</th>
+  
+      <th>Nombre</th>
+  
+      <th>Fecha</th>
+  
+    </tr>
+  
+    <tr *ngFor="let libro of libros, index as i">
+  
+      <td>{{i+1}}</td>
+      <td>{{libro.autor}}</td>
+      <td>{{libro.nombre}}</td>
+      <td>{{libro.fecha}}</td>
+  
+    </tr>
+  
+  </table>
+</div>
